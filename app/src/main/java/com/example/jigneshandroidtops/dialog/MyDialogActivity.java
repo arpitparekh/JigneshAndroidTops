@@ -3,10 +3,12 @@ package com.example.jigneshandroidtops.dialog;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.widget.DatePicker;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -15,7 +17,10 @@ import com.example.jigneshandroidtops.databinding.ActivityMyDialogBinding;
 import com.example.jigneshandroidtops.databinding.DialogLayoutBinding;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class MyDialogActivity extends AppCompatActivity {
 
@@ -172,13 +177,61 @@ public class MyDialogActivity extends AppCompatActivity {
             TimePickerDialog dialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
                 @Override
                 public void onTimeSet(TimePicker timePicker, int i, int i1) {
-                    Toast.makeText(MyDialogActivity.this, i+" "+i1, Toast.LENGTH_SHORT).show();
+
+                    String hr24 = i+":"+i1;
+
+                    SimpleDateFormat format24 = new SimpleDateFormat("HH:mm");
+                    SimpleDateFormat format12 = new SimpleDateFormat("hh:mm a");
+
+                    // convert 24 hr string into 24hr date format
+
+                    try {
+
+                        Date date24 = format24.parse(hr24);
+
+                        String hr12 = format12.format(date24);
+
+                        binding.btnTimePicker.setText(hr12);
+
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+
+
                 }
             },hour,min,true);
 
             dialog.show();
 
         });
+
+        binding.btnDatePicker.setOnClickListener(view -> {
+
+            Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
+
+            DatePickerDialog dialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                @Override
+                public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+
+                    binding.btnDatePicker.setText(i2+"/"+(i1+1)+"/"+i);
+
+                }
+            },year,month,day);
+
+            dialog.getDatePicker().setMinDate(System.currentTimeMillis());
+
+            c.set(2022,3,21);
+
+            dialog.getDatePicker().setMaxDate(c.getTimeInMillis());
+
+
+            dialog.show();
+
+        });
+
 
     }
 }

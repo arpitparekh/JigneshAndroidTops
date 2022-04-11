@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JigneshAndroidTops">
         <activity
-            android:name=".dialog.MyDialogActivity"
+            android:name=".navigation_drawer.MyDrawerActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -21,10 +21,16 @@
 
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".add_view_programmatically.MyActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".dialog.MyDialogActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
