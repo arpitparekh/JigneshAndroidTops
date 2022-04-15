@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:padding="30dp"
     android:layout_height="match_parent"
-    tools:context=".adapters.AdapterActivity">
+    tools:context=".adapters.array_adapter.AdapterActivity">
 
     <EditText
         android:layout_width="match_parent"

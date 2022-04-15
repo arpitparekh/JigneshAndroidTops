@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JigneshAndroidTops">
         <activity
-            android:name=".adapters.AdapterActivity"
+            android:name=".adapters.simple_adapter.SimpleAdapterActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -21,16 +21,22 @@
 
         </activity>
         <activity
-            android:name=".navigation_drawer.MyDrawerActivity"
+            android:name=".adapters.spinner_autoComplete.SpinnerActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".adapters.array_adapter.AdapterActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".navigation_drawer.MyDrawerActivity"
+            android:exported="true" />
         <activity
             android:name=".add_view_programmatically.MyActivity"
             android:exported="true" />
         <activity
             android:name=".dialog.MyDialogActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

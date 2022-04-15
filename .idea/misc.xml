@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.26145833333333335" />
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_2.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/drawable/ic_android.xml" value="0.1645" />
         <entry key="app/src/main/res/layout/activity_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_simple_adapter.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/activity_spinner.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/dialog_layout.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/header_layout.xml" value="0.259375" />
         <entry key="app/src/main/res/layout/listview_items.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/simple_adapter_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_dialog_layout.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.264" />
       </map>

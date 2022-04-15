@@ -1,4 +1,4 @@
-package com.example.jigneshandroidtops.adapters;
+package com.example.jigneshandroidtops.adapters.array_adapter;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
