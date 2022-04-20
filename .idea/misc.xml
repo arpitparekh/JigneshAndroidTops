@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/activity_simple_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_spinner.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_tab_pager.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/activity_vehicle_list.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/dialog_layout.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/fragment_one.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/fragment_text.xml" value="0.26145833333333335" />
@@ -25,6 +26,7 @@
         <entry key="app/src/main/res/layout/listview_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/simple_adapter_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_dialog_layout.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/vehicle_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.264" />
       </map>
     </option>
