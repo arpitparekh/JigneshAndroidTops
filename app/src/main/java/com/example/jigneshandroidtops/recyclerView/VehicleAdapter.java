@@ -27,8 +27,6 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleV
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         VehicleRowItemBinding binding = VehicleRowItemBinding.inflate(inflater,parent,false);
         VehicleViewHolder holder = new VehicleViewHolder(binding);
-
-
         return holder;
     }
 

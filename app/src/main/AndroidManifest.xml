@@ -10,9 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JigneshAndroidTops">
         <activity
-            android:name=".recyclerView.VehicleListActivity"
+            android:name=".recyclerView_crud.WeatherListActivity"
             android:exported="true" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,13 +20,16 @@
 
         </activity>
         <activity
-            android:name=".implicit_intent.ImplicitActivity"
+            android:name=".recyclerView.VehicleListActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".viewpager.TabPagerActivity"
+            android:name=".implicit_intent.ImplicitActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".viewpager.TabPagerActivity"
+            android:exported="true" />
         <activity
             android:name=".extra.AToFStringActivity"
             android:exported="true" />
