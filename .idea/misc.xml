@@ -6,11 +6,13 @@
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.26145833333333335" />
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_2.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/drawable/ic_android.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1895" />
         <entry key="app/src/main/res/layout/activity_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_ato_fstring.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_implicit.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2604166666666667" />
+        <entry key="app/src/main/res/layout/activity_my_data.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_simple_adapter.xml" value="0.26145833333333335" />
@@ -18,6 +20,7 @@
         <entry key="app/src/main/res/layout/activity_tab_pager.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_vehicle_list.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_weather_list.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/data_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/dialog_layout.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/fragment_one.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/fragment_text.xml" value="0.26145833333333335" />
@@ -30,6 +33,7 @@
         <entry key="app/src/main/res/layout/vehicle_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/weather_row_item.xml" value="0.4" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.264" />
+        <entry key="app/src/main/res/menu/search_menu.xml" value="0.2546875" />
       </map>
     </option>
   </component>
