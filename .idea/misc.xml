@@ -15,6 +15,9 @@
         <entry key="app/src/main/res/layout/activity_my_data.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_my_sheet.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_my_tool.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_my_web.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_simple_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_spinner.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_tab_pager.xml" value="0.26145833333333335" />
@@ -28,6 +31,7 @@
         <entry key="app/src/main/res/layout/fragment_two.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/header_layout.xml" value="0.259375" />
         <entry key="app/src/main/res/layout/listview_items.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/my_bottom_sheet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/simple_adapter_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_dialog_layout.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/vehicle_row_item.xml" value="0.264" />
