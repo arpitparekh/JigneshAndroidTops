@@ -84,7 +84,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DataViewHolder
     }
 
     public class DataViewHolder extends RecyclerView.ViewHolder {
+
         DataRowItemBinding binding;
+
         public DataViewHolder(@NonNull DataRowItemBinding binding) {
             super(binding.getRoot());
             this.binding=binding;
