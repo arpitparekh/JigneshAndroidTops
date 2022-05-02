@@ -5,8 +5,10 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity(tableName = "EmpTable")
-public class Emp {
+public class Emp implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     int key;
@@ -16,6 +18,7 @@ public class Emp {
 
     @ColumnInfo(name = "address")
     String address;
+
 
     public Emp(String name, String address) {
         this.name = name;

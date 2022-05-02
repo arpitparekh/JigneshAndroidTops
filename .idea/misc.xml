@@ -20,6 +20,7 @@
         <entry key="app/src/main/res/layout/activity_my_sheet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_tool.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_web.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_show_emp_data.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_simple_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_spinner.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_tab_pager.xml" value="0.26145833333333335" />
@@ -36,6 +37,7 @@
         <entry key="app/src/main/res/layout/my_bottom_sheet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/simple_adapter_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_dialog_layout.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/update_emp_dialog.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/vehicle_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/weather_row_item.xml" value="0.4" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.264" />
