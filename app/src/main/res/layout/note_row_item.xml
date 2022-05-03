@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="obj"
+            type="com.example.jigneshandroidtops.room_recyclerView_addToFav.Note" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="#8BC34A"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cbFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/fav_selector"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/cbFab"
+                android:gravity="center"
+                android:text="@{obj.title}"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginTop="10dp"
+                android:text="@{obj.des}"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

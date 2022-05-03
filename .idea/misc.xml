@@ -5,6 +5,7 @@
       <map>
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.26145833333333335" />
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_2.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/drawable/fav_selector.xml" value="0.294" />
         <entry key="app/src/main/res/drawable/ic_android.xml" value="0.1645" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1895" />
         <entry key="app/src/main/res/layout/activity_adapter.xml" value="0.26145833333333335" />
@@ -20,12 +21,14 @@
         <entry key="app/src/main/res/layout/activity_my_sheet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_tool.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_web.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_note_list.xml" value="0.21603260869565216" />
         <entry key="app/src/main/res/layout/activity_show_emp_data.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_simple_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_spinner.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_tab_pager.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_vehicle_list.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_weather_list.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/add_note_dialog.xml" value="0.264" />
         <entry key="app/src/main/res/layout/data_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/dialog_layout.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/fragment_one.xml" value="0.26145833333333335" />
@@ -35,11 +38,13 @@
         <entry key="app/src/main/res/layout/header_layout.xml" value="0.259375" />
         <entry key="app/src/main/res/layout/listview_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/my_bottom_sheet.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/note_row_item.xml" value="0.36510791366906475" />
         <entry key="app/src/main/res/layout/simple_adapter_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_dialog_layout.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_emp_dialog.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/vehicle_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/weather_row_item.xml" value="0.4" />
+        <entry key="app/src/main/res/menu/add_menu.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.264" />
         <entry key="app/src/main/res/menu/search_menu.xml" value="0.2546875" />
       </map>
