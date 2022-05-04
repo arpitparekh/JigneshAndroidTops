@@ -47,4 +47,11 @@ public class Note {
     public void setFav(boolean fav) {
         this.fav = fav;
     }
+
+    @Override
+    public String toString() {
+        return
+                "title= " +title+
+                "\ndes= " + des;
+    }
 }

@@ -27,10 +27,7 @@ public class Emp implements Serializable {
 
     @Override
     public String toString() {
-        return "Emp{" +
-                "key=" + key +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        return "name= " + name+
+                "\naddress= " + address ;
     }
 }

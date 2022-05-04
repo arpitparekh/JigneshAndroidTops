@@ -35,6 +35,7 @@ public class WeatherListActivity extends AppCompatActivity implements WeatherAda
 
         binding.rvWeather.setAdapter(adapter);
 
+
         binding.rvWeather.setLayoutManager(new LinearLayoutManager(this));  // linear vertical
 //        binding.rvWeather.setLayoutManager(new GridLayoutManager(this,2));
 //        binding.rvWeather.setLayoutManager(new StaggeredGridLayoutManager(2, LinearLayout.VERTICAL));

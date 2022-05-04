@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,7 +18,7 @@ import com.example.jigneshandroidtops.databinding.AddNoteDialogBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NoteListActivity extends AppCompatActivity {
+public class NoteListActivity extends AppCompatActivity implements NoteAdapter.MyClickInterface {
 
     private ActivityNoteListBinding binding;
     private AddNoteDialogBinding dialogBinding;
@@ -79,6 +80,10 @@ public class NoteListActivity extends AppCompatActivity {
                 }
             }).create().show();
 
+        }else if(item.getItemId()==R.id.action_fav){
+
+            startActivity(new Intent(this,FavActivity.class));
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -86,9 +91,23 @@ public class NoteListActivity extends AppCompatActivity {
     void refreshData(){
 
         list = dao.showNotes();
-        adapter = new NoteAdapter(list);
+        adapter = new NoteAdapter(list,this);
         binding.rvNotes.setAdapter(adapter);
 
     }
 
+    @Override
+    public void onFavClick(int position,boolean b) {
+
+        Note note = list.get(position);
+
+        if(b){
+            note.fav = true;
+
+        }else{
+            note.fav = false;
+        }
+
+        dao.updateNote(note);
+    }
 }

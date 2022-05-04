@@ -3,6 +3,7 @@ package com.example.jigneshandroidtops.room_recyclerView_addToFav;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,10 +15,17 @@ import java.util.List;
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder> {
 
     private List<Note> list;
+    MyClickInterface myClickInterface;
 
-    NoteAdapter(List<Note> list){
-
+    NoteAdapter(List<Note> list,MyClickInterface myClickInterface){
+        this.myClickInterface = myClickInterface;
         this.list = list;
+    }
+
+    interface MyClickInterface{
+
+        void onFavClick(int position,boolean b);
+
     }
 
     @NonNull
@@ -29,8 +37,17 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull NoteViewHolder holder, int position) {
+
         Note note=list.get(position);
         holder.binding.setObj(note);
+
+        if(note.fav==true){
+            holder.binding.cbFab.setChecked(true);
+        }
+
+        holder.binding.cbFab.setOnCheckedChangeListener((compoundButton, b) ->
+                myClickInterface.onFavClick(position,b));
+
     }
 
     @Override

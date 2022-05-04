@@ -23,4 +23,7 @@ public interface NotesDao {
     @Query("select * from Note")
     List<Note> showNotes();
 
+    @Query("select * from Note where status = :status")
+    List<Note> showFavNotes(boolean status);
+
 }
