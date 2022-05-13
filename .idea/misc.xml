@@ -10,17 +10,22 @@
         <entry key="app/src/main/res/drawable/ic_android.xml" value="0.1645" />
         <entry key="app/src/main/res/drawable/ic_heart_empty.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/my_shape.xml" value="0.136" />
+        <entry key="app/src/main/res/drawable/toolbar_shape.xml" value="0.2065" />
         <entry key="app/src/main/res/layout/activity_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_ato_fstring.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_emp_list.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_external_storage.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_fav.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_implicit.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_internal_storage.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_json_parsing.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my_data.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.2604166666666667" />
-        <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_my_shape.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_sheet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_tool.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_web.xml" value="0.28958333333333336" />
@@ -48,6 +53,7 @@
         <entry key="app/src/main/res/layout/vehicle_row_item.xml" value="0.264" />
         <entry key="app/src/main/res/layout/weather_row_item.xml" value="0.4" />
         <entry key="app/src/main/res/menu/add_menu.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.264" />
         <entry key="app/src/main/res/menu/search_menu.xml" value="0.2546875" />
       </map>

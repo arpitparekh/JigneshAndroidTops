@@ -3,6 +3,8 @@
     package="com.example.jigneshandroidtops">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -11,37 +13,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JigneshAndroidTops"
+        android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".room_recyclerView_addToFav.FavActivity"
-            android:exported="false" />
-        <activity
-            android:name=".room_recyclerView_addToFav.NoteListActivity"
-            android:exported="true">
+            android:name=".storage.ExternalStorageActivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".json_parsing.JsonParsingActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".shapes.MyShape"
+            android:exported="false" />
+        <activity
+            android:name=".room_recyclerView_addToFav.FavActivity"
+            android:exported="false" />
+        <activity
+            android:name=".room_recyclerView_addToFav.NoteListActivity"
+            android:exported="true" />
         <activity
             android:name=".room_crud.ShowEmpDataActivity"
             android:exported="false" />
         <activity
             android:name=".room_crud.EmpListActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".storage.InternalStorageActivity"
             android:exported="true" />
         <activity
             android:name=".bottom_sheet.MySheetActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".webview.MyWebActivity"
             android:exported="true" />
         <activity
             android:name=".expandable_toolbar.MyToolActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".recyclerView_serachView.MyDataActivity"
             android:exported="true" />

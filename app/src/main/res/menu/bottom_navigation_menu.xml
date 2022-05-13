@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Hi"
+        android:icon="@drawable/ic_heart_full"
+        android:enabled="true"
+        android:id="@+id/item01"/>
+
+    <item
+        android:title="Hi"
+        android:icon="@drawable/ic_heart_full"
+        android:enabled="true"
+        android:id="@+id/item02"/>
+</menu>

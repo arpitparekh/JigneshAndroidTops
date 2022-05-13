@@ -4,22 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigation_drawer.MyDrawerActivity"
-    tools:openDrawer="end">
+    tools:context=".navigation_drawer.MyDrawerActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#2196F3"
-            android:id="@+id/toolbar"
+            android:background="@drawable/toolbar_shape"
+            app:menu="@menu/my_menu"
             app:navigationIcon="@drawable/ic_menu"
-            app:title="This is Toolbar"
             app:subtitle="This is SubTitle"
-            app:menu="@menu/my_menu"/>
+            app:title="This is Toolbar" />
 
     </RelativeLayout>
 

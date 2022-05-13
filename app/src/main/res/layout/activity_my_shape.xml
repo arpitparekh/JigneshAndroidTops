@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shapes.MyShape">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape"
+        android:text="Button"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="72dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="295dp"
+        android:scaleType="centerCrop"
+        android:layout_height="281dp"
+        android:background="@drawable/my_shape"
+        android:src="@drawable/ic_heart_empty"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#D7C9F0"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="678dp" />
+</RelativeLayout>

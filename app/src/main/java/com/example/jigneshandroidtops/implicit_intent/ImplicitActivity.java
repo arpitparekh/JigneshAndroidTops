@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.view.View;
 
 import com.example.jigneshandroidtops.databinding.ActivityImplicitBinding;
 
@@ -20,6 +21,7 @@ public class ImplicitActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         //Implicit intent
+
 
         binding.btnCamera.setOnClickListener(view -> {
 
