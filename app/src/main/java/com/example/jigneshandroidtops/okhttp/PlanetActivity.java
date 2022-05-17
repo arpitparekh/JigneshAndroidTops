@@ -101,12 +101,10 @@ public class PlanetActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     void refreshAdapter(){
         adapter = new PlanetAdapter(list);
         binding.recyclerViewPlanet.setAdapter(adapter);
-
     }
 }
