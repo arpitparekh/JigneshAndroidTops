@@ -81,8 +81,6 @@ public class PlanetActivity extends AppCompatActivity {
                         Planet planet = new Planet(name,des,img);
 
                         list.add(planet);
-
-
                     }
 
                     runOnUiThread(new Runnable() {
