@@ -3,20 +3,23 @@
     package="com.example.jigneshandroidtops">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JigneshAndroidTops"
-        android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".storage.ExternalStorageActivity"
+            android:name=".okhttp.PlanetActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -27,10 +30,16 @@
 
         </activity>
         <activity
-            android:name=".json_parsing.JsonParsingActivity"
+            android:name=".activity_result.MyResultActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".storage.ExternalStorageActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".json_parsing.JsonParsingActivity"
+            android:exported="true" />
         <activity
             android:name=".shapes.MyShape"
             android:exported="false" />
@@ -51,13 +60,13 @@
             android:exported="true" />
         <activity
             android:name=".bottom_sheet.MySheetActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".webview.MyWebActivity"
             android:exported="true" />
         <activity
             android:name=".expandable_toolbar.MyToolActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".recyclerView_serachView.MyDataActivity"
             android:exported="true" />

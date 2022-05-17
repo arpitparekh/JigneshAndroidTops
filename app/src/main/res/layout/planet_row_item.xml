@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="obj"
+            type="com.example.jigneshandroidtops.okhttp.Planet" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:background="#B0B0B0"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/cvPlanet"
+                app:cardCornerRadius="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/ivPlanet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:text="@{obj.name}"
+                android:layout_below="@id/cvPlanet"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDes"
+                android:text="@{obj.des}"
+                android:layout_below="@id/tvName"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -6,9 +6,13 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -31,6 +35,8 @@ public class ExternalStorageActivity extends AppCompatActivity {
         checkExternalPermission();
 
         binding.btnSend.setOnClickListener(view -> {
+
+            checkExternalPermission();
 
             String data = binding.edtExternal.getText().toString();
 
@@ -60,6 +66,8 @@ public class ExternalStorageActivity extends AppCompatActivity {
 
         binding.btnReceive.setOnClickListener(view -> {
 
+            checkExternalPermission();
+
             File rootFolder = Environment.getExternalStorageDirectory();
 
             File subFolder = new File(rootFolder,"demoFolder");
@@ -83,19 +91,37 @@ public class ExternalStorageActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-
         });
 
     }
 
     private void checkExternalPermission() {
 
-        if(ContextCompat.checkSelfPermission(this,Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED &&
-        ContextCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE},101);
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
+
+            if(!Environment.isExternalStorageManager()){
+
+                Intent i = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
+                i.setData(Uri.fromParts("package",getPackageName(),null));
+                startActivity(i);
+
+
+            }else{
+
+            }
+
         }else{
-            Toast.makeText(this, "Permission is Already Granted", Toast.LENGTH_SHORT).show();
+
+            if(ContextCompat.checkSelfPermission(this,Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED &&
+                    ContextCompat.checkSelfPermission(this,Manifest.permission.READ_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE},101);
+            }else{
+                Toast.makeText(this, "Permission is Already Granted", Toast.LENGTH_SHORT).show();
+            }
         }
+
+
 
     }
 
