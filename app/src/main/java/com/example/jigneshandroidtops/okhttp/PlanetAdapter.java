@@ -11,15 +11,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.jigneshandroidtops.R;
 import com.example.jigneshandroidtops.databinding.PlanetRowItemBinding;
+import com.example.jigneshandroidtops.okhttp.gson.ImgSrcItem;
+import com.example.jigneshandroidtops.okhttp.gson.ItemsItem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.PlanetViewHolder> {
 
-    ArrayList<Planet> list;
+    List<ItemsItem> list;
     Context context;
 
-    PlanetAdapter(ArrayList<Planet> list){
+    PlanetAdapter(List<ItemsItem> list){
         this.list = list;
     }
     @NonNull
@@ -32,11 +35,15 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.PlanetView
 
     @Override
     public void onBindViewHolder(@NonNull PlanetViewHolder holder, int position) {
-        Planet planet = list.get(position);
-        holder.binding.setObj(planet);
+        ItemsItem item = list.get(position);
+        holder.binding.setObj(item);
+
+        List<ImgSrcItem> itemList =  item.getImgSrc();
+
+        ImgSrcItem imageItem =  itemList.get(0);
 
         Glide.with(context)
-                .load(planet.img)
+                .load(imageItem.getImg())
                 .centerCrop()
                 .into(holder.binding.ivPlanet);
 

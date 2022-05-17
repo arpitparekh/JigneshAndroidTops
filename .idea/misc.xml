@@ -49,7 +49,7 @@
         <entry key="app/src/main/res/layout/listview_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/my_bottom_sheet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/note_row_item.xml" value="0.36510791366906475" />
-        <entry key="app/src/main/res/layout/planet_row_item.xml" value="0.23599828986746474" />
+        <entry key="app/src/main/res/layout/planet_row_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/simple_adapter_items.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_dialog_layout.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/update_emp_dialog.xml" value="0.28958333333333336" />
