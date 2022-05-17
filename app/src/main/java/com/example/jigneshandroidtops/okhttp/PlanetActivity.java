@@ -67,7 +67,7 @@ public class PlanetActivity extends AppCompatActivity {
 
                 String json = response.body().string();
 
-                Solar solar = gson.fromJson(json,Solar.class);
+                Solar solar = gson.fromJson(json,Solar.class);  // JSON TO JAVA OBJECT
 
                 list = solar.getItems();
 

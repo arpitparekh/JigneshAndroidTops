@@ -19,7 +19,7 @@
         android:theme="@style/Theme.JigneshAndroidTops"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".okhttp.PlanetActivity"
+            android:name=".retrofit.JobListActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -30,13 +30,16 @@
 
         </activity>
         <activity
-            android:name=".activity_result.MyResultActivity"
+            android:name=".okhttp.PlanetActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".storage.ExternalStorageActivity"
+            android:name=".activity_result.MyResultActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".storage.ExternalStorageActivity"
+            android:exported="true" />
         <activity
             android:name=".json_parsing.JsonParsingActivity"
             android:exported="true" />
