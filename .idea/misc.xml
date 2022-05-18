@@ -14,6 +14,7 @@
         <entry key="app/src/main/res/drawable/toolbar_shape.xml" value="0.2065" />
         <entry key="app/src/main/res/layout/activity_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_ato_fstring.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/activity_dash_board.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_emp_list.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_external_storage.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_fav.xml" value="0.28958333333333336" />
@@ -21,6 +22,7 @@
         <entry key="app/src/main/res/layout/activity_internal_storage.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_job_list.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_json_parsing.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_my_data.xml" value="0.2546875" />
@@ -28,12 +30,14 @@
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_result.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_my_shared.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_sheet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_tool.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_web.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_note_list.xml" value="0.21603260869565216" />
         <entry key="app/src/main/res/layout/activity_planet.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_show_emp_data.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_simple_adapter.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_spinner.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_tab_pager.xml" value="0.26145833333333335" />

@@ -19,7 +19,7 @@
         android:theme="@style/Theme.JigneshAndroidTops"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".retrofit.JobListActivity"
+            android:name=".storage.MySharedActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -30,13 +30,25 @@
 
         </activity>
         <activity
-            android:name=".okhttp.PlanetActivity"
+            android:name=".firebase.DashBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.LoginActivity"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".retrofit.JobListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".okhttp.PlanetActivity"
+            android:exported="true" />
+        <activity
             android:name=".activity_result.MyResultActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".storage.ExternalStorageActivity"
             android:exported="true" />
