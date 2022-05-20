@@ -15,7 +15,6 @@ public class ApiHelper {
         JobApi api = retrofit.create(JobApi.class);
 
         return api;
-
     }
 
 }

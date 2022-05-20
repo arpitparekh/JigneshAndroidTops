@@ -24,7 +24,6 @@ public class MySharedActivity extends AppCompatActivity {
             editor.putString("string","tops");
             editor.putLong("long",343434343445l);
             editor.apply();
-
         });
 
         binding.btnFetch.setOnClickListener(view -> {
