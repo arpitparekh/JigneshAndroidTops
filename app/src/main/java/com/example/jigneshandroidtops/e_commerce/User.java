@@ -4,9 +4,14 @@ public class User {
 
     String uid;
     String name;
-    String email;
-    String phone;
-    String url;
+    String email="";
+    String phone="";
+    String url="";
+
+    public User(String uid, String name) {
+        this.uid = uid;
+        this.name = name;
+    }
 
     public User(String uid, String name, String email, String phone, String url) {
         this.uid = uid;

@@ -44,7 +44,7 @@ public class ELoginActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(AuthResult authResult) {
 
-                                Toast.makeText(ELoginActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
+                               startActivity(new Intent(ELoginActivity.this,ProductListActivity.class));
 
                             }
                         })

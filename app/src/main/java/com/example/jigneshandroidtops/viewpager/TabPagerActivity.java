@@ -39,12 +39,10 @@ public class TabPagerActivity extends AppCompatActivity {
                 binding.viewPager.setCurrentItem(tab.getPosition());
 
             }
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
 
             }
-
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 
