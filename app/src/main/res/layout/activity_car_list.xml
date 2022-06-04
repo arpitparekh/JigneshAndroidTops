@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firebase_realtime.CarListActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtName"
+        android:hint="Enter Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtType"
+        android:hint="Enter Type"
+        android:layout_below="@id/edtName"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSend"
+        android:layout_below="@id/edtType"
+        android:text="Send"/>
+
+    <ListView
+        android:id="@+id/listViewCar"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnSend"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
